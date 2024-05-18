@@ -15,8 +15,6 @@ highScoreEl.textContent = highScore;
 let score = 20; // Initial score
 let randomNumber = Math.floor(Math.random() * 20) + 1; // Generate a random number between 1 and 20
 
-console.log(randomNumber); // Log the random number for debugging
-
 // Function to display a message in the message box
 const message = (msg) => {
   messageBox.textContent = msg;
@@ -73,7 +71,7 @@ function checkNumber() {
 // Function to reset the game
 function reset() {
   randomNumber = Math.floor(Math.random() * 20) + 1; // Generate a new random number
-  console.log(randomNumber); // Log the new random number for debugging
+
   gameContainer.classList.remove('bg-win'); // Remove the win background
   inputField.value = ''; // Clear the input field
   score = 20; // Reset the score
